@@ -10,6 +10,6 @@ Sobre a Empresa A Inova Tech Solutions é uma empresa de tecnologia fundada em 2
 - **Local:** Centro, Piripiri, PI - CEP 64260-000
 
 ## Equipe
-- **Arthur Rodrigues** — CEO/Desenvolvedor Full Stack
-- **Antônio Borges** — Designer UI/UX
+- **Arthur Rodrigues** — CEO e Desenvolvedor Full Stack
+- **Antônio Borges** — Designer UI e UX
 - **Moisés Urquiza** — Analista de Sistemas
