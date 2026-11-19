@@ -1,0 +1,42 @@
+
+---
+const { destaque } = Astro.props;
+---
+
+<div class:list={['cartao', { 'cartao-destaque': destaque }]}>
+	<slot />
+</div>
+
+<style>
+	.cartao {
+		background-color: var(--cor-fundo);
+		border: 1px solid var(--cor-borda);
+		border-radius: var(--borda-raio);
+		padding: 2rem;
+		box-shadow: var(--sombra-cartao);
+		transition: transform 0.2s ease, box-shadow 0.2s ease,
+			border-color 0.2s ease;
+	}
+
+	.cartao:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--sombra-cartao-hover);
+		border-color: var(--cor-destaque);
+	}
+
+	.cartao-destaque {
+		border: 1px solid var(--cor-borda);
+		border-top: 4px solid transparent;
+		border-image: linear-gradient(
+			90deg,
+			#044FFB,
+			#0681FC,
+			#08B0FC,
+			#11DBFC
+		) 1;
+	}
+
+	.cartao-destaque:hover {
+		box-shadow: 0 10px 25px rgba(4, 79, 251, 0.15);
+	}
+</style>

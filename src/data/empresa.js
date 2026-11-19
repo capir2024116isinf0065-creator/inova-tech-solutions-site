@@ -50,10 +50,10 @@ export const empresa = {
     },
     {
       nome: "Moisés Urquiza ",
-      cargo: "Especialista em Bancos de Dados",
+      cargo: "Analista de Sistemas",
       foto: "/images/Moisés Urquiza.jpg",
       alt: "Foto de Moisés Urquiza ",
-      descricao: "Analista de Sistemas ."
+      descricao: "Responsável por analisar as necessidades dos clientes, identificar problemas e propor soluções tecnológicas. Também auxilia no planejamento, na organização e na melhoria dos sistemas desenvolvidos pela empresa. ."
     }
   ]
 };

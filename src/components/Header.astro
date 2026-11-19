@@ -1,15 +1,94 @@
+
 ---
 import { empresa } from '../data/empresa.js';
+
+const currentPath = Astro.url.pathname;
 ---
 
-<header>
-	<strong><a href="/">{empresa.nome}</a></strong>
-	<nav>
-		<ul>
-			<li><a href="/">Início</a></li>
-			<li><a href="/sobre">Sobre</a></li>
-			<li><a href="/equipe">Equipe</a></li>
-			<li><a href="/contato">Contato</a></li>
-		</ul>
-	</nav>
+<header class="cabecalho">
+	<div class="faixa-topo"></div>
+	<div class="container cabecalho-container">
+		<a href="/">
+			<img 
+				src="/images/logo.png" 
+				alt={`Logotipo da ${empresa.nome}`} 
+				class="logo-img" 
+			/>
+		</a>
+
+		<nav class="navegacao">
+			<ul>
+				<li><a href="/" class:list={[{ ativo: currentPath === '/' }]}>Início</a></li>
+				<li><a href="/sobre" class:list={[{ ativo: currentPath.startsWith('/sobre') }]}>Sobre</a></li>
+				<li><a href="/equipe" class:list={[{ ativo: currentPath.startsWith('/equipe') }]}>Equipe</a></li>
+				<li><a href="/contato" class:list={[{ ativo: currentPath.startsWith('/contato') }]}>Contato</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
+
+<style>
+	.faixa-topo {
+		height: 4px;
+		background: var(--degrade-marca);
+	}
+
+	.cabecalho {
+		background-color: var(--cor-fundo);
+		border-bottom: 1px solid var(--cor-borda);
+		padding-bottom: 1rem;
+	}
+
+	.cabecalho-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+		padding-top: 1.5rem;
+	}
+
+	.logo-img {
+		height: 60px;
+		width: auto;
+		display: block;
+	}
+
+	.navegacao ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+
+	.navegacao a {
+		font-weight: 600;
+		color: var(--cor-texto);
+		padding: 0.5rem 0;
+		border-bottom: 2px solid transparent;
+		transition: color 0.2s ease, border-color 0.2s ease;
+	}
+
+	.navegacao a:hover,
+	.navegacao a.ativo {
+		color: var(--cor-primaria);
+		border-bottom-color: var(--cor-destaque);
+		text-decoration: none;
+	}
+
+	.navegacao a.ativo {
+		border-bottom-color: var(--cor-secundaria);
+	}
+
+	@media (max-width: 600px) {
+		.cabecalho-container {
+			justify-content: center;
+			text-align: center;
+		}
+
+		.navegacao ul {
+			justify-content: center;
+			gap: 1rem;
+		}
+	}
+</style>
