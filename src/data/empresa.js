@@ -54,6 +54,13 @@ export const empresa = {
       foto: "/images/Moisés Urquiza.jpg",
       alt: "Foto de Moisés Urquiza ",
       descricao: "Responsável por analisar as necessidades dos clientes, identificar problemas e propor soluções tecnológicas. Também auxilia no planejamento, na organização e na melhoria dos sistemas desenvolvidos pela empresa. ."
+    },
+    {
+      nome: "Paulo Fernandes ",
+      cargo: "Analista de Qualidade de Software (QA)",
+      foto: "/images/Paulo Fernandes.jpg",
+      alt: "Foto de Paulo Fernandes ",
+      descricao: "Responsável por testar os sistemas, identificar erros e sugerir melhorias, garantindo a qualidade e o bom funcionamento dos softwares antes da entrega aos clientes."
     }
   ]
 };
