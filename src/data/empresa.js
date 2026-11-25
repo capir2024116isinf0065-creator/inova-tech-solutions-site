@@ -2,7 +2,7 @@ export const empresa = {
   nome: "Inova Tech Solutions ",
   slogan: "Soluções que conectam seu futuro.",
   historia:
-    ":A Inova Tech Solutions foi fundada em 2022, em Piripiri, Piauí, por profissionais da área de tecnologia que perceberam a necessidade de soluções digitais para empresas da região. O nome surgiu da união de três ideias: “Inova”, de inovação; “Tech”, de tecnologia; e “Solutions”, de soluções, representando o propósito da empresa de utilizar a tecnologia para resolver problemas. Inicialmente, a empresa desenvolvia sites e sistemas para pequenos negócios e, com o crescimento da demanda, passou a oferecer sistemas web, aplicativos e soluções personalizadas.",
+    "A Inova Tech Solutions foi fundada em 2022, em Piripiri, Piauí, por profissionais da área de tecnologia que perceberam a necessidade de soluções digitais para empresas da região. O nome surgiu da união de três ideias: “Inova”, de inovação; “Tech”, de tecnologia; e “Solutions”, de soluções, representando o propósito da empresa de utilizar a tecnologia para resolver problemas. Inicialmente, a empresa desenvolvia sites e sistemas para pequenos negócios e, com o crescimento da demanda, passou a oferecer sistemas web, aplicativos e soluções personalizadas.",
   missao:
     "Desenvolver soluções tecnológicas eficientes, acessíveis e personalizadas que auxiliem empresas e pessoas a resolver problemas e melhorar seus processos.",
   visao:
