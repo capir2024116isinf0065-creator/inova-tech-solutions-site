@@ -14,6 +14,12 @@ import { empresa } from '../data/empresa.js';
 				<h1>Fale Conosco</h1>
 				<p>Deseja construir uma solução de software sob medida para o seu negócio? Entre em contato com a {empresa.nome}!</p>
 			</div>
+			<div class="imagem-sede">
+    <img
+        src="/images/empresa.png"
+        alt="Fachada da sede da Inova Tech Solutions em Piripiri, Piauí"
+    />
+</div>
 
 			<div class="grid-contato">
 				<Cartao>
@@ -56,6 +62,21 @@ import { empresa } from '../data/empresa.js';
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
 		color: var(--cor-secundaria);
+	}
+	.imagem-sede {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+	.imagem-sede img {
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
 	}
 
 	address {
